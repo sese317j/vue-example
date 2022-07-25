@@ -1,5 +1,9 @@
 <template>
-  <button @click="onClick()" :style="{ background: color }" class="btn">
+  <button
+    @click="$emit('toggle-show-add-task')"
+    :style="{ background: color }"
+    class="btn"
+  >
     {{ text }}
   </button>
 </template>

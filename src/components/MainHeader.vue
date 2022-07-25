@@ -1,7 +1,11 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <MainButton text="Add Task" color="green"></MainButton>
+    <MainButton
+      @toggle-show-add-task="$emit('toggle-show-add-task')"
+      text="Add Task"
+      color="green"
+    ></MainButton>
   </header>
 </template>
 
@@ -16,6 +20,7 @@ export default {
   components: {
     MainButton,
   },
+  emits: ["toggle-show-add-task"],
 };
 </script>
 
