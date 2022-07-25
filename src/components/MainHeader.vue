@@ -2,7 +2,7 @@
   <header>
     <h1>{{ title }}</h1>
     <MainButton
-      @toggle-show-add-task="$emit('toggle-show-add-task')"
+      @btn-click="$emit('toggle-show-add-task')"
       :text="showAddTask ? 'Close' : 'Add Task'"
       :color="showAddTask ? 'red' : 'green'"
     ></MainButton>
