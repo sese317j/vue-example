@@ -3,6 +3,7 @@
     <Main-header
       @toggle-show-add-task="toggleShowAddTask"
       title="Task Tracker"
+      :showAddTask="showAddTask"
     />
     <div v-show="showAddTask">
       <AddTask @add-task="addTask" />

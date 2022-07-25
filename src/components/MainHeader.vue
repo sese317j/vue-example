@@ -3,8 +3,8 @@
     <h1>{{ title }}</h1>
     <MainButton
       @toggle-show-add-task="$emit('toggle-show-add-task')"
-      text="Add Task"
-      color="green"
+      :text="showAddTask ? 'Close' : 'Add Task'"
+      :color="showAddTask ? 'red' : 'green'"
     ></MainButton>
   </header>
 </template>
@@ -16,6 +16,7 @@ export default {
   name: "MainHeader",
   props: {
     title: String,
+    showAddTask: Boolean,
   },
   components: {
     MainButton,
