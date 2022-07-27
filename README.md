@@ -1,24 +1,3 @@
-# vue-example
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Getting to know the Vue Framework.
+Following this tutorial: https://www.youtube.com/watch?v=qZXt1Aom3Cs
+The tutorial source code: https://github.com/bradtraversy/vue-crash-2021
