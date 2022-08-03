@@ -13,6 +13,7 @@
       @toggle-reminder="toggleReminder"
       :tasks="tasks"
     />
+    <main-footer></main-footer>
   </div>
 </template>
 
@@ -20,10 +21,12 @@
 import MainHeader from "@/components/MainHeader";
 import TaskList from "@/components/TaskList";
 import AddTask from "@/components/AddTask";
+import MainFooter from "@/components/MainFooter";
 
 export default {
   name: "App",
   components: {
+    MainFooter,
     MainHeader,
     TaskList,
     AddTask,
